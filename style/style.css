@@ -24,7 +24,6 @@ header > h1 {
 
 header > ul {
     display: flex;
-    border: 1px solid;
 }
 
 header > ul > li {
@@ -42,8 +41,14 @@ header > ul > li {
 }
 
 #info > .about {
+    display: flex;
+    flex-direction: column;
     width: 60%;
-    border: 1px solid;
+    justify-content: space-around;
+}
+
+#info > .image > img{
+    width: 100%;
 }
 
 #info > .about > .button {
@@ -84,12 +89,16 @@ header > ul > li {
 }
 
 #project > .project > .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border: 1px solid;
     width: 30%;
+    padding: 10px;
 }
 
 #project > .project > .card > img {
-    width: 100%;
+    height: 100px;
 }
 
 #contact {
@@ -104,11 +113,37 @@ header > ul > li {
 }
 
 #contact > .form {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 40%;
+}
+
+#contact > .form > input {
+    margin: 1px;
+    padding: 10px;
+    width: 250px;
+}
+
+#contact > .form > input:nth-child(3) {
+    margin: 1px;
+    padding: 10px;
+    width: 250px;
+    height: 100px;
+
+}
+
+#contact > .form > button {
+    margin-top: 10px;
+    width: 275px;
+    height: 30px;
 }
 
 footer {
     border: 1px solid;
+    margin-top: 10px;
     font-size: 12px;
     display: flex;
     justify-content: center;
